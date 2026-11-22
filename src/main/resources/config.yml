@@ -1,0 +1,43 @@
+# XmasWelcome - nastavení
+# Texty používají MiniMessage (barvy např. <red>, <gold>, <gradient:#ff4d4d:#ffffff>...</gradient>)
+
+# Název světa, ve kterém funguje double jump a knížka (na velikosti písmen nezáleží)
+world: Christmas
+
+# Uvítání v chatu při připojení (platí pro všechny hráče, v jakémkoli světě)
+welcome:
+  enabled: true
+  # <player> = jméno hráče
+  lines:
+    - ""
+    - "<gradient:#ff4d4d:#ffffff><bold>❄ Vítej na vánočním eventu, <player>! ❄</bold></gradient>"
+    - "<gray>Ve světě Christmas se můžeš odrážet <white>double jumpem</white> (dvakrát mezerník)."
+    - "<gray>Informace o serveru najdeš v <gold>knížce</gold> ve středním slotu."
+    - ""
+
+doublejump:
+  enabled: true
+  # Pauza mezi dvěma skoky (milisekundy)
+  cooldown-ms: 1000
+  # Síla skoku dopředu a nahoru
+  forward: 1.0
+  up: 0.9
+  # Nebrat hráčům zdraví za pád ve vánočním světě
+  no-fall-damage: true
+  # Zpráva do chatu při každém double jumpu
+  message: "<aqua>❄ Double jump!"
+
+book:
+  # Slot v hotbaru, 0-8 (4 = prostřední, tedy pátý)
+  slot: 4
+  # Jméno předmětu v inventáři
+  name: "<gold>Informace o serveru"
+  # Titulek a autor knížky (vidět při najetí na předmět)
+  title: "Informace"
+  author: "Flex-Games.cz"
+  # Každý řádek v seznamu = jedna stránka. \n = nový řádek.
+  # Příklady textů, přepiš si je podle sebe.
+  pages:
+    - "<dark_red><bold>Flex-Games.cz</bold>\n\n<black>Vítej na vánočním eventu!\n\n<dark_green>Adventní kalendář:</dark_green>\n<black>Každý den si vyber odměnu. Odměny pak můžeš proměnit na hlavním serveru, například na VIP.\n\n<dark_gray>Platí do 28. 12."
+    - "<dark_red><bold>Příkazy</bold>\n\n<black>/xmas\n<dark_gray>postup hledání dárků\n\n<black>/snowfight join\n<dark_gray>sněhová bitva\n\n<black>Double jump:\n<dark_gray>dvakrát mezerník"
+    - "<dark_red><bold>Pravidla</bold>\n\n<black>- Žádné cheaty ani zneužívání chyb\n- Buď slušný k ostatním\n- Respektuj pokyny týmu\n\n<dark_gray>Příjemnou zábavu a veselé Vánoce!"

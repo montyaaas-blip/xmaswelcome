@@ -1,0 +1,20 @@
+name: XmasWelcome
+version: 1.0.0
+main: cz.vanoce.xmaswelcome.XmasWelcomePlugin
+api-version: '26.2'
+author: Claude
+description: Uvítání, double jump a informační knížka pro vánoční svět
+
+commands:
+  xmaswelcome:
+    description: Správa pluginu XmasWelcome
+    usage: "/<command> reload"
+    aliases: [xw]
+
+permissions:
+  xmaswelcome.admin:
+    description: Může načíst konfiguraci příkazem /xmaswelcome reload
+    default: op
+  xmaswelcome.doublejump:
+    description: Může používat double jump ve vánočním světě
+    default: true
